@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "UseRequest";
+}
+<form name="f1" action="/TinhToan/UseRequest" method="post">
+    <table>
+        <caption>THUC HIEN PHEP TOAN</caption>
+        <tr>
+            <td>Nhap a :</td>
+            <td><input type="text" name="a" /></td>
+        </tr>
+        <tr>
+            <td>Nhap b:</td>
+            <td><input type="text" name="b" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="radio" checked name="pt" value="+" />Cong
+                <input type="radio" name="pt" value="-" />Tru
+                <input type="radio" name="pt" value="*" />Nhan
+                <input type="radio" name="pt" value="/" />Chia
+                <input type="submit" value="Tinh Toan" />
+            </td>
+        </tr>
+        <tr>
+            <td>Ket qua:</td>
+            <td><input type="text" name="kq" value="@ViewBag.KQ" /></td>
+        </tr>
+    </table>
+</form>
+
